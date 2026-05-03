@@ -1,12 +1,13 @@
 import { Button } from "@/components/Button";
 import { Menu ,X} from "lucide-react";
 import { useEffect, useState } from "react";
+import { Contact } from "@/sections/Contact";
 
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export const Navbar = () => {
@@ -27,7 +28,7 @@ return () => window.removeEventListener ("scroll",handleScroll);
       isScrolled ? "glass-strong py-3" : "bg-transparent py-5"}  z-50`}>
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a href="#" className="text-xl font-bold tracking-tight hover:text-[var(--color-primary)]">
-          PM<span className="text-[var(--color-primary)]">.</span>
+           M<span className="text-primary">S</span><span className="text-primary">.</span>
         </a>
 
         {/* Desktop Nav */}
@@ -47,7 +48,7 @@ return () => window.removeEventListener ("scroll",handleScroll);
 
 {/* CTA Button  */}
             <div className="hidden md:block">
-              <Button size="sm"> contact Me</Button>
+              <Button  href="#contact" size="sm" > contact Me</Button>
             </div>
 
 {/* Mobile menu button */}
@@ -70,7 +71,7 @@ return () => window.removeEventListener ("scroll",handleScroll);
                 {link.label}
               </a>
             ))}
-            <Button  onClick={()=> setIsMobileMenuOpen(false)} size="sm">
+            <Button  href="#contact" onClick={()=> setIsMobileMenuOpen(false)} size="sm">
               Contact Me
               </Button>
         </div>

@@ -79,7 +79,7 @@ export const Projects = ()=>{
                             <a href={project.link} className="p-3 rounded-full glass hover:bg-[var(--color-primary)] hover:text-[var(--color-primary-foreground)] transition-all">
                                 <ArrowUpRight className="w-5 h-5"/>
                             </a>
-                            <a href={project.link}
+                            <a href={project.github}
                             className="p-3 rounded-full glass hover:bg-[var(--color-primary)] hover:text-[var(--color-primary-foreground)] transition-all">
                                 <FaGithub className="w-5 h-5"/>
                             </a>

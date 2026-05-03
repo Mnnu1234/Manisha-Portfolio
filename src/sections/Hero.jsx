@@ -96,15 +96,14 @@ export const Hero = () => {
 
             {/* Description */}
             <p className="text-lg text-[var(--color-muted-foreground)] max-w-lg animate-fade-in animation-delay-200">
-              Hi, I’m a passionate developer focused on MERN stack, React, and
-              backend systems. I build responsive, high-performance applications
-              and continuously explore new technologies to solve real-world
-              problems.
+              Hi, I’m Manisha Sharma — a passionate developer focused on the MERN stack, React, and backend systems.
+               I build responsive, high-performance applications and continuously explore new technologies
+                to solve real-world problems.
             </p>
 
             {/* CTAs Buttons */}
             <div className="flex  felx-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
+              <Button href="#contact" size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
               <AnimatedBorderButton>
